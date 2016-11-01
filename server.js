@@ -12,10 +12,16 @@ app.use('/styles', express.static(path.join(__dirname, 'ui', 'css')));
 app.use('/images', express.static(path.join(__dirname, 'ui', 'images')));
 //serve ui/views folder as /views route
 app.use('/views', express.static(path.join(__dirname, 'ui', 'views')));
+app.use('/fonts', express.static(path.join(__dirname, 'ui', 'fonts')));
 
 app.get('/', function (req, res) {
-  res.send('Under construction');
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
+
 
 var port = 8080;
 app.listen(port, function () {
