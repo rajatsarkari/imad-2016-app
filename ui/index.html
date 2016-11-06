@@ -4,11 +4,27 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 <!--Body-->
 <body>
-  <!--Navigation Bar Layout-->
+  <!--JavaScript SDK for FB Follow Button-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script type="text/javascript">
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/platform.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+  </script><!--Navigation Bar Layout-->
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -147,7 +163,7 @@
     </div>
     <!--Education Division-->
     <div class="edu text-center" id="edu" style="color:black">
-      <h1>EDUCATION</h1>
+      <h1 class="glyphicon glyphicon-education">EDUCATION</h1>
       <div class="jumbotron col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <table class="table table-hover table-responsive">
           <thead class="text-center text-primary">
@@ -300,20 +316,32 @@
           <h1 class="text-center">CONNECT WITH ME...</h1>
           <div class="jumbotron">
             <div class="row">
-              <div class="col-lg-3 col-mg-3 col-sm-3 col-xs-3">
-                <img class="img img-circle img-responsive" src="images/fbi.JPG" />
+              <div class="social google-pluse">
+                <i class="fa fa-google-plus fa-5x"></i>
               </div>
-              <div class="col-lg-3 col-mg-3 col-sm-3 col-xs-3">
-                <img class="img img-circle img-responsive" src="images/ini.JPG" />
+              <div class="social facebook">
+                <i class="fa fa-facebook fa-5x"></i>
               </div>
-              <div class="col-lg-3 col-mg-3 col-sm-3 col-xs-3">
-                <img class="img img-circle img-responsive" src="images/twi.JPG" />
+              <div class="social twitter">
+                <i class="fa fa-twitter fa-5x"></i>
               </div>
-              <div class="col-lg-3 col-mg-3 col-sm-3 col-xs-3">
-                <img class="img img-circle img-responsive" src="images/emaili.JPG" />
+              <div class="social pinterest">
+                <i class="fa fa-pinterest fa-5x"></i>
+              </div>
+              <div class="social linkedin">
+                <i class="fa fa-linkedin fa-5x"></i>
+              </div>
+              <div class="social skype">
+                <i class="fa fa-skype fa-5x"></i>
+              </div>
+              <div class="social youtube">
+                <i class="fa fa-youtube fa-5x"></i>
+              </div>
+              <div class="social tumblr">
+                <i class="fa fa-tumblr fa-5x"></i>
               </div>
             </div>
-            <div class="row" style="margin:30px">
+            <!--<div class="row" style="margin:30px">
               <div class="panel panel-primary">
                 <div class="panel-heading">
                   <h3 class="panel-title">COMMENTS AND SUGGESTIONS</h3>
@@ -337,12 +365,13 @@
                   </form>
                 </div>
               </div>
-            </div>
+            </div>-->
+            <div class="fb-comments" data-href="https://www.facebook.com/RajatDaGamE" data-width="500" data-numposts="4"></div>
           </div>
         </div>
       </div>
       <div class="footer text-center" style="color:black">
-        <p><strong>Made with <span class="glyphicon glyphicon-heart"></span> by RAJAT SARKARI</strong></p>
+        <p><strong><span class="glyphicon glyphicon-wrench"></span> by RAJAT SARKARI</strong></p>
       </div>
     </div>
   </body>
