@@ -13,6 +13,7 @@ app.use('/images', express.static(path.join(__dirname, 'ui', 'images')));
 //serve ui/views folder as /views route
 app.use('/views', express.static(path.join(__dirname, 'ui', 'views')));
 app.use('/fonts', express.static(path.join(__dirname, 'ui', 'fonts')));
+app.use('/others', express.static(path.join(__dirname, 'ui', 'others')));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));

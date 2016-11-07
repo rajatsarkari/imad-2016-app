@@ -10,9 +10,10 @@ body {
     border:1px solid rgb(204,204,204);
     box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
     border-radius:100px;
-    margin:0 10px 10px 0;
+    margin:0px 10px 10px 0;
     padding:19px;
 }
+.google:hover{background:#DD4B39;color:#FFF; }
 .google-pluse:hover{background:#DD4B39;color:#FFF;}
 .facebook:hover{background:#3b5998;color:#FFF;}
 .twitter:hover{background:#00acee;color:#FFF;}
