@@ -19,3 +19,7 @@ body {
 .twitter:hover{background:#00acee;color:#FFF;}
 .linkedin:hover{background:#0e76a8;color:#FFF;}
 .skype:hover{background:#00aff0;color:#FFF;}
+
+.label{
+  line-height: 3;
+}

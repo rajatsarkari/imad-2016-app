@@ -14,15 +14,11 @@ app.use('/images', express.static(path.join(__dirname, 'ui', 'images')));
 app.use('/views', express.static(path.join(__dirname, 'ui', 'views')));
 app.use('/fonts', express.static(path.join(__dirname, 'ui', 'fonts')));
 app.use('/others', express.static(path.join(__dirname, 'ui', 'others')));
+app.use('/ui', express.static(path.join(__dirname, 'ui')));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
-
-
-
-
 
 var port = 8080;
 app.listen(port, function () {
