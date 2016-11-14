@@ -1,25 +1,103 @@
 body {
-  height:100%;
+  height: 100%;
+  padding-top: 150px !important;
 }
-.social{
-    text-align:center;
-    width:120px;
-    height:120px;
-    float:left;
-    background:rgb(255,255,255);
-    border:1px solid rgb(204,204,204);
-    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-    border-radius:100px;
-    margin:0px 10px 10px 0;
-    padding:19px;
-}
-.google:hover{background:#DD4B39;color:#FFF; }
-.google-pluse:hover{background:#DD4B39;color:#FFF;}
-.facebook:hover{background:#3b5998;color:#FFF;}
-.twitter:hover{background:#00acee;color:#FFF;}
-.linkedin:hover{background:#0e76a8;color:#FFF;}
-.skype:hover{background:#00aff0;color:#FFF;}
 
-.label{
+.social {
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  float: left;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  margin: 0px 10px 10px 0;
+  padding: 19px;
+}
+
+.google:hover {
+  background: #DD4B39;
+  color: #FFF;
+}
+
+.google-pluse:hover {
+  background: #DD4B39;
+  color: #FFF;
+}
+
+.facebook:hover {
+  background: #3b5998;
+  color: #FFF;
+}
+
+.twitter:hover {
+  background: #00acee;
+  color: #FFF;
+}
+
+.linkedin:hover {
+  background: #0e76a8;
+  color: #FFF;
+}
+
+.skype:hover {
+  background: #00aff0;
+  color: #FFF;
+}
+
+.label {
   line-height: 3;
+}
+
+.pt-80 {
+  padding-top: 80px !important;
+}
+
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.separator{
+    height: 200px;
+    width: 0px;
+    padding-left: 0px;
+    border-left: 1px solid gray;
+}
+
+svg {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper > .bar, .wrapper > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper > img {
+    border-radius: 50%;
+}
+
+.progressbar-label{
+  font-size: 10px;
+}
+
+.wrapper:hover div{
+  font-size: 50px;
+  color:white !important;
+}
+
+.social-icon{
+  font-size: 50px;
+  color: deepskyblue;
 }

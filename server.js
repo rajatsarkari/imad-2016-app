@@ -2,7 +2,10 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var app = express();
+var dbHelper = require('./dbhelper.js');
+
 app.use(morgan('combined'));
+
 
 //serve ui/script folder as /scripts route
 app.use('/scripts', express.static(path.join(__dirname, 'ui', 'script')));
@@ -23,4 +26,12 @@ app.get('/', function (req, res) {
 var port = 8080;
 app.listen(port, function () {
   console.log('server is running on ', port);
+
+  /*dbHelper.query('select * from role', function(err, res){
+    if(err){
+      console.log(err);
+    }
+    
+    console.log(res);
+  });*/
 });
