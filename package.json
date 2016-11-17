@@ -1,19 +1,25 @@
 {
-  "name": "imad-2016-base",
-  "version": "0.1.0",
-  "description": "IMAD 2016 course app",
+  "name": "imad-2016-app",
+  "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "Rajat Sarkari",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatsarkari/imad-2016-app.git"
+  },
+  "author": "rajat",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.14.0",
-    "morgan": "^1.7.0"
+  "bugs": {
+    "url": "https://github.com/rajatsarkari/imad-2016-app/issues"
   },
+  "homepage": "https://github.com/rajatsarkari/imad-2016-app#readme",
   "devDependencies": {
     "express": "^4.14.0",
+    "morgan": "^1.7.0",
     "mysql": "mysqljs/mysql"
   }
 }
