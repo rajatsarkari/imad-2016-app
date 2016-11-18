@@ -1,7 +1,7 @@
-var mysql = require('mysql');
+//var mysql = require('mysql');
 
 var DBHelper = {
-    connection: mysql.createConnection({
+    /*connection: mysql.createConnection({
         host: '69.167.191.21',
         user: 'rajat@69.167.191.21',
         password: 'rs@13934',
@@ -26,7 +26,7 @@ var DBHelper = {
             console.log(rows);
             console.log(fields);
         });
-    }
+    }*/
 };
 
 module.exports = DBHelper;
