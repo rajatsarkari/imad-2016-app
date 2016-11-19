@@ -26,6 +26,7 @@ $(document).ready(function() {
                         skillBars.javaBar.animate(0, {duration: 200});
                         skillBars.dbmsBar.animate(0, {duration: 200});
                         skillBars.assemblyBar.animate(0, {duration: 200});
+                        skillBars.mBar.animate(0, {duration: 200});
                         skillBars.cBar.animate(0, {duration: 200});
                         
                         setTimeout(function(){
