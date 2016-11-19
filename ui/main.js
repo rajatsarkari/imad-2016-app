@@ -10,7 +10,7 @@ $(document).ready(function() {
                     scrollTop: target.offset().top
                 }, 1000);
                 console.log(target[0].id);
-                if (target == 'skills') {
+                if (target[0].id == 'skills') {
                     createSkillProgress('.htmlbar', 0.6);
                     createSkillProgress('.cssbar', 0.65);
                     createSkillProgress('.javabar', 0.7);
