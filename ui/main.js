@@ -40,7 +40,8 @@ $(document).ready(function() {
                             skillBars.cBar.animate(0.9, {duration: 1000});
                         }, 1000);
                 }
-                //$('.navbar-toggle').click();
+                $('.navbar-toggle').addClass('collapsed');
+                $('.navbar-collapse').removeClass('in');
                 return false;
             }
         }
