@@ -22,13 +22,26 @@ $(document).ready(function() {
                 console.log(target[0].id);
                 if (target[0].id == 'skills') {
                     setTimeout(function(){
-                        animateSkill(skillBars.htmlBar, 0.6);
-                        animateSkill(skillBars.cssBar, 0.65);
-                        animateSkill(skillBars.javaBar, 0.7);
-                        animateSkill(skillBars.dbmsBar, 0.5);
-                        animateSkill(skillBars.assemblyBar, 0.7);
-                        animateSkill(skillBars.cBar, 0.9);
-                        animateSkill(skillBars.mBar, 0.8);
+                        skillBars.htmlBar.animate(0);
+                        skillBars.htmlBar.animate(0.6);
+                        
+                        skillBars.cssBar.animate(0);
+                        skillBars.cssBar.animate(0.65);
+                        
+                        skillBars.javaBar.animate(0);
+                        skillBars.javaBar.animate(0.7);
+                        
+                        skillBars.dbmsBar.animate(0);
+                        skillBars.dbmsBar.animate(0.5);
+                        
+                        skillBars.assemblyBar.animate(0);
+                        skillBars.assemblyBar.animate(0.7);
+                        
+                        skillBars.cBar.animate(0);
+                        skillBars.cBar.animate(0.9);
+                        
+                        skillBars.mBar.animate(0);
+                        skillBars.mBar.animate(0.8);
                     },1000);
                 }
                 return false;
@@ -50,16 +63,6 @@ function createSkillProgress(skill, value) {
     });
 
     return bar;
-}
-
-function animateSkill(skill, value){
-    skill.animate(0, {
-        duration: 300
-    });
-    
-    skill.animate(value, {
-        duration: 1000
-    });
 }
 
 function loadBlogPosts() {
