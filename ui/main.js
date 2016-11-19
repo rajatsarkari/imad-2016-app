@@ -9,6 +9,17 @@ $(document).ready(function () {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        if (target==skills) {
+        createSkillProgress('.htmlbar', 0.6);
+    	createSkillProgress('.cssbar', 0.65);
+    	createSkillProgress('.javabar', 0.7);
+    	createSkillProgress('.dbmsbar', 0.5);
+    	createSkillProgress('.assemblybar', 0.7);
+    	createSkillProgress('.cbar', 0.9);
+    	createSkillProgress('.mbar', 0.8);
+        }
+            
+        }
         return false;
       }
     }
