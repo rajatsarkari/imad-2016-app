@@ -51,6 +51,10 @@ function createSkillProgress(skill, value) {
 }
 
 function animateSkill(skill, value){
+    skill.animate(0, {
+        duration: 300
+    });
+    
     skill.animate(value, {
         duration: 1000
     });
