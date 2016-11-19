@@ -1,3 +1,13 @@
+var skillBars = {
+    htmlBar: createSkillProgress('.htmlbar', 0.6),
+    cssBar: createSkillProgress('.cssbar', 0.65),
+    javaBar: createSkillProgress('.javabar', 0.7),
+    dbmsBar: createSkillProgress('.dbmsbar', 0.5),
+    assemblyBar: createSkillProgress('.assemblybar', 0.7),
+    cBar: createSkillProgress('.cbar', 0.9),
+    mBar: createSkillProgress('.mbar', 0.8)
+};
+
 $(document).ready(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         $('.navbar-nav li').removeClass('active');
@@ -11,26 +21,18 @@ $(document).ready(function() {
                 }, 1000);
                 console.log(target[0].id);
                 if (target[0].id == 'skills') {
-                    createSkillProgress('.htmlbar', 0.6);
-                    createSkillProgress('.cssbar', 0.65);
-                    createSkillProgress('.javabar', 0.7);
-                    createSkillProgress('.dbmsbar', 0.5);
-                    createSkillProgress('.assemblybar', 0.7);
-                    createSkillProgress('.cbar', 0.9);
-                    createSkillProgress('.mbar', 0.8);
+                    animateSkill(skillBars.htmlBar, 0.6);
+                    animateSkill(skillBars.cssBar, 0.65);
+                    animateSkill(skillBars.javaBar, 0.7);
+                    animateSkill(skillBars.dbmsBar, 0.5);
+                    animateSkill(skillBars.assemblyBar, 0.7);
+                    animateSkill(skillBars.cBar, 0.9);
+                    animateSkill(skillBars.mBar, 0.8);
                 }
                 return false;
             }
         }
     });
-
-    /*createSkillProgress('.htmlbar', 0.6);
-    createSkillProgress('.cssbar', 0.65);
-    createSkillProgress('.javabar', 0.7);
-    createSkillProgress('.dbmsbar', 0.5);
-    createSkillProgress('.assemblybar', 0.7);
-    createSkillProgress('.cbar', 0.9);
-    createSkillProgress('.mbar', 0.8);*/
     loadBlogPosts();
 });
 
@@ -45,10 +47,13 @@ function createSkillProgress(skill, value) {
         }
     });
 
-    bar.animate(value, {
+    return bar;
+}
+
+function animateSkill(skill, value){
+    skill.animate(value, {
         duration: 1000
     });
-
 }
 
 function loadBlogPosts() {
