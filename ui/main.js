@@ -21,13 +21,15 @@ $(document).ready(function() {
                 }, 1000);
                 console.log(target[0].id);
                 if (target[0].id == 'skills') {
-                    animateSkill(skillBars.htmlBar, 0.6);
-                    animateSkill(skillBars.cssBar, 0.65);
-                    animateSkill(skillBars.javaBar, 0.7);
-                    animateSkill(skillBars.dbmsBar, 0.5);
-                    animateSkill(skillBars.assemblyBar, 0.7);
-                    animateSkill(skillBars.cBar, 0.9);
-                    animateSkill(skillBars.mBar, 0.8);
+                    setTimeout(function(){
+                        animateSkill(skillBars.htmlBar, 0.6);
+                        animateSkill(skillBars.cssBar, 0.65);
+                        animateSkill(skillBars.javaBar, 0.7);
+                        animateSkill(skillBars.dbmsBar, 0.5);
+                        animateSkill(skillBars.assemblyBar, 0.7);
+                        animateSkill(skillBars.cBar, 0.9);
+                        animateSkill(skillBars.mBar, 0.8);
+                    },1000);
                 }
                 return false;
             }
