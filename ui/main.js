@@ -9,7 +9,7 @@ $(document).ready(function() {
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
-                alert(target);
+                console.log(target);
                 if (target == 'skills') {
                     createSkillProgress('.htmlbar', 0.6);
                     createSkillProgress('.cssbar', 0.65);
