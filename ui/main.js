@@ -21,33 +21,38 @@ $(document).ready(function() {
                 }, 1000);
                 console.log(target[0].id);
                 if (target[0].id == 'skills') {
-                    setTimeout(function(){
-                        skillBars.htmlBar.animate(0);
-                        skillBars.htmlBar.animate(0.6);
+                        skillBars.htmlBar.animate(0, {duration: 200});
+                        skillBars.cssBar.animate(0, {duration: 200});
+                        skillBars.javaBar.animate(0, {duration: 200});
+                        skillBars.dbmsBar.animate(0, {duration: 200});
+                        skillBars.assemblyBar.animate(0, {duration: 200});
+                        skillBars.cBar.animate(0, {duration: 200});
                         
-                        skillBars.cssBar.animate(0);
-                        skillBars.cssBar.animate(0.65);
-                        
-                        skillBars.javaBar.animate(0);
-                        skillBars.javaBar.animate(0.7);
-                        
-                        skillBars.dbmsBar.animate(0);
-                        skillBars.dbmsBar.animate(0.5);
-                        
-                        skillBars.assemblyBar.animate(0);
-                        skillBars.assemblyBar.animate(0.7);
-                        
-                        skillBars.cBar.animate(0);
-                        skillBars.cBar.animate(0.9);
-                        
-                        skillBars.mBar.animate(0);
-                        skillBars.mBar.animate(0.8);
-                    },1000);
+                        setTimeout(function(){
+                            skillBars.mBar.animate(0, {duration: 1000});
+                            skillBars.htmlBar.animate(0.6, {duration: 1000});
+                            skillBars.cssBar.animate(0.65, {duration: 1000});
+                            skillBars.javaBar.animate(0.7, {duration: 1000});
+                            skillBars.dbmsBar.animate(0.5, {duration: 1000});
+                            skillBars.assemblyBar.animate(0.7, {duration: 1000});
+                            skillBars.mBar.animate(0.8, {duration: 1000});
+                            skillBars.cBar.animate(0.9, {duration: 1000});
+                        }, 1000);
                 }
                 return false;
             }
         }
     });
+    
+    skillBars.mBar.animate(0, {duration: 1000});
+    skillBars.htmlBar.animate(0.6, {duration: 1000});
+    skillBars.cssBar.animate(0.65, {duration: 1000});
+    skillBars.javaBar.animate(0.7, {duration: 1000});
+    skillBars.dbmsBar.animate(0.5, {duration: 1000});
+    skillBars.assemblyBar.animate(0.7, {duration: 1000});
+    skillBars.mBar.animate(0.8, {duration: 1000});
+    skillBars.cBar.animate(0.9, {duration: 1000});
+    
     loadBlogPosts();
 });
 
