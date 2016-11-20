@@ -11,6 +11,16 @@
 <!--Body-->
 
 <body>
+
+  <!--FB SDK-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
     <!--Navigation Bar Layout-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -220,7 +230,7 @@
                     </div>
                     <div class="row" style="margin-top:30px">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <img class="img img-primary img-rounded img-responsive" src="images/tbu.png" />
+                            <img class="img img-primary img-rounded img-responsive" src="images/c++cert.jpg" />
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
                             <h3>2. C++ Programming Language<small class="text-success"> Gold Medal &amp; Elite Certificate</small></h3>
@@ -228,7 +238,7 @@
                     </div>
                     <div class="row" style="margin-top:30px">
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                            <img class="img img-primary img-rounded img-responsive" src="images/tbu.png" />
+                            <img class="img img-primary img-rounded img-responsive" src="images/pythoncert.jpg" />
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
                             <h3>3. Programming And Data Structures Using Python<small class="text-success"> Elite Certificate</small></h3>
@@ -465,6 +475,8 @@
         <script src="scripts/progressbar.js"></script>
         <script src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
         <script src="ui/main.js"></script>
+        <!--Like and Share Button-->
+        <div class="fb-like" data-href="http://rajatsarkari.imad.hasura-app.io/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
     </div>
 </body>
 

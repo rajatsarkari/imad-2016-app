@@ -91,3 +91,7 @@ svg {
 .navbar-toggle{
     float: left !important;
 }
+
+.foot {
+  text-align: center;
+}
